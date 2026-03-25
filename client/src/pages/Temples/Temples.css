@@ -1,0 +1,112 @@
+.temples-page { min-height: 100vh; }
+
+.temples-hero {
+  background: linear-gradient(135deg, #8B0000, #B8860B);
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.temples-hero h1 {
+  color: #FFD700;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.temples-hero p { color: #fff; font-size: 1.05rem; }
+
+.temples-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.temples-filter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-input {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  flex: 1;
+  min-width: 200px;
+  transition: border-color 0.2s;
+}
+
+.filter-input:focus-within { border-color: #8B0000; }
+
+.filter-icon { color: #888; margin-right: 0.5rem; }
+
+.filter-input input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.filter-btn {
+  background: linear-gradient(135deg, #8B0000, #B8860B);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.filter-btn:hover { opacity: 0.9; }
+
+.temples-grid-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.page-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.page-btn.active, .page-btn:hover {
+  background: #8B0000;
+  border-color: #8B0000;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .temples-grid-page { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .temples-grid-page { grid-template-columns: 1fr; }
+  .temples-filter { flex-direction: column; }
+}

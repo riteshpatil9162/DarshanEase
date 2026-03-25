@@ -1,0 +1,99 @@
+.temple-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.temple-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(139,0,0,0.2);
+}
+
+.temple-card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.temple-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.temple-card:hover .temple-card-img {
+  transform: scale(1.05);
+}
+
+.temple-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(139, 0, 0, 0.85);
+  color: #FFD700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+.temple-card-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.temple-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #8B0000;
+  margin-bottom: 0.5rem;
+}
+
+.temple-location, .temple-hours {
+  color: #666;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.temple-location svg, .temple-hours svg { color: #B8860B; }
+
+.temple-desc {
+  color: #555;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  flex: 1;
+  margin: 0.5rem 0 1rem;
+}
+
+.book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #8B0000, #B8860B);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+  text-align: center;
+}
+
+.book-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}

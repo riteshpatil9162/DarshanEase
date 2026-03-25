@@ -1,0 +1,119 @@
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8B0000 0%, #B8860B 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.auth-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-icon {
+  font-size: 3rem;
+  color: #8B0000;
+  margin-bottom: 0.5rem;
+}
+
+.auth-header h2 {
+  color: #333;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.auth-header p { color: #888; font-size: 0.9rem; }
+
+.auth-form { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.input-wrapper:focus-within { border-color: #8B0000; }
+
+.input-icon {
+  padding: 0 0.75rem;
+  color: #888;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.75rem 0.75rem 0.75rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.auth-btn {
+  background: linear-gradient(135deg, #8B0000, #B8860B);
+  color: #fff;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.auth-btn:hover:not(:disabled) { opacity: 0.9; }
+.auth-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.auth-switch {
+  text-align: center;
+  margin-top: 1.25rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.auth-switch a {
+  color: #8B0000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch a:hover { text-decoration: underline; }
+
+.demo-creds {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: #fff8e1;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #666;
+  border: 1px solid #ffe082;
+}
+
+.demo-creds p { margin-bottom: 0.25rem; }
+.demo-creds strong { color: #B8860B; }
