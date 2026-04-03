@@ -81,12 +81,6 @@ const Login = () => {
         <p className="auth-switch">
           Don't have an account? <Link to="/register">Register here</Link>
         </p>
-
-        <div className="demo-creds">
-          <p><strong>Demo Credentials:</strong></p>
-          <p>Admin: admin@darshanease.com / admin123</p>
-          <p>User: user@darshanease.com / user1234</p>
-        </div>
       </div>
     </div>
   );
