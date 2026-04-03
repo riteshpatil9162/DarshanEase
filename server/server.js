@@ -42,18 +42,18 @@ app.get('/', (req, res) => {
   res.json({ message: 'DarshanEase API is running', status: 'OK' });
 });
 
-// Centralized Error Handler
+// 404 handler - must be before error handler
+app.use((req, res, next) => {
+  res.status(404).json({ success: false, message: 'Route not found' });
+});
+
+// Centralized Error Handler - must be last
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(err.statusCode || 500).json({
     success: false,
     message: err.message || 'Internal Server Error',
   });
-});
-
-// 404 handler
-app.use((req, res) => {
-  res.status(404).json({ success: false, message: 'Route not found' });
 });
 
 const PORT = process.env.PORT || 5000;
