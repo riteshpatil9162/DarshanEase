@@ -16,6 +16,7 @@ app.use(cors({
   origin: [
     'https://darshanease-booking.vercel.app',
     'http://localhost:5173',
+    'http://localhost:5174',
     'http://localhost:3000'
   ],
   credentials: true
